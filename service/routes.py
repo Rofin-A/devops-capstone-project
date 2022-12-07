@@ -77,7 +77,7 @@ def list_accounts():
 ######################################################################
 # READ AN ACCOUNT
 ######################################################################
-@app.route("/accounts/<int:account_id>",methods=["GET"])
+@app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
     """ Reads an Account This endpoint will read an Account based the account_id that is requested """
     app.logger.info("Request to read an Account with id: %s", account_id)
